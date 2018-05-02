@@ -16,8 +16,15 @@ span.uppercase {
 }
 
 div.logo-banner {
-  height: 10em;
+  height: auto;
   width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
 }
 
 .parallax-section {
@@ -37,15 +44,15 @@ div.logo-banner {
 }
 
 .background-img1 {
-  background-image: url("../lisa-heck-design/Images/darkSouls1.jpg");
+  background-image: url("../lisa-heck-design/Images/overhead_mug_website.jpg");
 }
 
 .background-img2 {
-  background-image: url("../lisa-heck-design/Images/darkSouls2.jpg");
+  background-image: url("../lisa-heck-design/Images/holding_mug_website.jpg");
 }
 
 .background-img3 {
-  background-image: url("../lisa-heck-design/Images/darkSouls3.jpg");
+  background-image: url("../lisa-heck-design/Images/sweater_chair_website.jpg");
 }
 
 .parallax-divide {
@@ -66,6 +73,7 @@ div.logo-banner {
   letter-spacing: .17em;
   hyphens: none;
   padding: 4em 1em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.4);
 }
 
 .h3-divide {
@@ -75,7 +83,7 @@ div.logo-banner {
   font-style: normal;
   font-size: 1.5em;
   line-height: 1.6em;
-  padding: 3em 1em;
+  padding: 4em 1em;
 }
 
 footer {
@@ -94,4 +102,44 @@ h6.footer-info {
   line-height: 2em;
   hyphens: none;
   padding: 2em 1.5em;
+}
+
+@media all and (min-width: 600px) {
+  .parallax-image {
+    min-height: 18em;
+  }
+
+  .h1-parallax {
+    font-size: 1.3em;
+  }
+
+  .h3-divide {
+    font-size: 2em;
+    padding: 4em 1em 4em 5em;
+  }
+
+  .logo {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .parallax-image {
+    min-height: 25em;
+  }
+
+  .h1-parallax {
+    font-size: 1.6em;
+  }
+
+  .h3-divide {
+    padding: 4em 1em 4em 12em;
+  }
+}
+
+@media all and (min-width: 1050px) {
+  .parallax-image {
+    min-height: 35em;
+  }
 }
