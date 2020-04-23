@@ -1,20 +1,131 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%
+  color: #000;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-span.uppercase {
+.serif {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.uppercase {
   text-transform: uppercase;
 }
 
+/* Navbar */
+nav {
+  position: fixed;
+  background-color: #fff;
+  width: 250px;
+  height: 100%;
+  font-family: proxima-nova, "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  /* border-right: 5px solid #000; */
+}
+
+a#lhd {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1.5px;
+  font-size: 14pt;
+  padding: 10px;
+  margin: 20px 0 20px 20px;
+  display: block;
+}
+
+a#lhd:hover {
+  color: #a67714;
+}
+
+ul.nav-menu {
+  list-style-type: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.nav-menu li {
+  display: block;
+  margin-left: auto;
+  letter-spacing: 2px;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 250px;
+}
+
+ul.nav-menu li:hover a {
+  color: #a67714;
+}
+
+ul.nav-menu li a {
+  letter-spacing: 2px;
+  font-size: 11pt;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Off-canvas menu specific */
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+.nav-trigger + label, .container {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 265px;
+}
+
+.nav-trigger:checked ~ .container {
+  left: 250px;
+}
+
+/* Container (All content) */
+.container {
+  padding: 60px;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+/* Homepage */
 div.logo-banner {
   height: auto;
   width: 100%;
@@ -26,6 +137,8 @@ div.logo-banner {
   height: 150px;
   width: 150px;
 }
+
+/* Parallax effect */
 
 .parallax-section {
   display: flex;
@@ -44,15 +157,15 @@ div.logo-banner {
 }
 
 .background-img1 {
-  background-image: url("../lisa-heck-design/Images/overhead_mug_website.jpg");
+  background-image: url("./public/images/home_overhead_mug.jpg");
 }
 
 .background-img2 {
-  background-image: url("../lisa-heck-design/Images/holding_mug_website.jpg");
+  background-image: url("./public/images/home_holding_mug.jpg");
 }
 
 .background-img3 {
-  background-image: url("../lisa-heck-design/Images/sweater_chair_website.jpg");
+  background-image: url("./public/images/home_sweater_chair.jpg");
 }
 
 .parallax-divide {
@@ -78,7 +191,7 @@ div.logo-banner {
 
 .h3-divide {
   color: #000000;
-  font-family: adobe-garamond-pro, Lora, Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em;
@@ -89,8 +202,8 @@ div.logo-banner {
 footer {
   width: 100%;
   height: 10em;
-  color: #ffffff;
-  background-color: #171717;
+  color: #000;
+  background-color: #f1f3f4;
 }
 
 h6.footer-info {
@@ -141,5 +254,58 @@ h6.footer-info {
 @media all and (min-width: 1050px) {
   .parallax-image {
     min-height: 35em;
+  }
+  nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    font-family: proxima-nova, "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+  }
+  
+  a#lhd {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1.5px;
+    font-size: 14pt;
+    margin-left: 50px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  a#lhd:hover {
+    color: #a67714;
+  }
+  
+  ul.nav-menu {
+    list-style-type: none;
+    margin: 0 50px 0 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+  }
+  
+  ul.nav-menu li {
+    display: inline-block;
+    margin-left: auto;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+  
+  ul.nav-menu li:hover a {
+    color: #a67714;
+  }
+  
+  ul.nav-menu li a {
+    letter-spacing: 2px;
+    font-size: 11pt;
+    color: #000;
+    text-decoration: none;
   }
 }
