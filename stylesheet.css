@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   color: #000;
@@ -8,7 +9,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
@@ -91,7 +97,8 @@ ul.nav-menu li a {
 
 label[for="nav-trigger"] {
   position: fixed;
-  left: 15px; top: 15px;
+  left: 15px;
+  top: 15px;
   z-index: 2;
   height: 30px;
   width: 30px;
@@ -100,15 +107,16 @@ label[for="nav-trigger"] {
   background-size: contain;
 }
 
-.nav-trigger + label, .container {
+.nav-trigger+label,
+.container {
   transition: left 0.2s;
 }
 
-.nav-trigger:checked + label {
+.nav-trigger:checked+label {
   left: 265px;
 }
 
-.nav-trigger:checked ~ .container {
+.nav-trigger:checked~.container {
   left: 250px;
 }
 
@@ -116,21 +124,31 @@ label[for="nav-trigger"] {
 .container {
   padding: 60px;
   min-height: 100%;
-  min-width: 100%;
+  /* min-width: 100%; */
   background-color: #fff;
   position: relative;
   top: 0;
   bottom: 100%;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* Homepage */
+.nav-placeholder {
+  height: 15em;
+}
+
 div.logo-banner {
   height: auto;
   width: 100%;
   text-align: center;
-  padding: 1em 0;
+  padding: 3em 0;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -186,7 +204,7 @@ div.logo-banner {
   letter-spacing: .17em;
   hyphens: none;
   padding: 4em 1em;
-  text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
 }
 
 .h3-divide {
@@ -255,33 +273,35 @@ h6.footer-info {
   .parallax-image {
     min-height: 35em;
   }
+
   nav {
     position: fixed;
     background-color: #fff;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
     font-family: proxima-nova, "Montserrat", sans-serif;
     font-weight: 600;
     font-style: normal;
     top: 0;
     left: 0;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
+    height: 50px;
   }
-  
+
   a#lhd {
     text-decoration: none;
     color: #000;
     letter-spacing: 1.5px;
     font-size: 14pt;
-    margin-left: 50px;
+    margin: 0 0 0 50px;
     padding: 10px;
     display: inline-block;
   }
-  
+
   a#lhd:hover {
     color: #a67714;
   }
-  
+
   ul.nav-menu {
     list-style-type: none;
     margin: 0 50px 0 0;
@@ -289,23 +309,28 @@ h6.footer-info {
     overflow: hidden;
     float: right;
   }
-  
+
   ul.nav-menu li {
     display: inline-block;
     margin-left: auto;
     letter-spacing: 2px;
     padding: 10px 10px;
     cursor: pointer;
+    width: unset;
   }
-  
+
   ul.nav-menu li:hover a {
     color: #a67714;
   }
-  
+
   ul.nav-menu li a {
     letter-spacing: 2px;
     font-size: 11pt;
     color: #000;
     text-decoration: none;
+  }
+
+  label[for="nav-trigger"] {
+    z-index: 0;
   }
 }
