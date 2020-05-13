@@ -17,7 +17,7 @@ h5,
 h6 {
   margin: 0;
   font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -213,11 +213,31 @@ div.logo-banner {
   font-size: 1.5em;
   line-height: 1.6em;
   padding: 4em 1em;
+  letter-spacing: 1.5px;
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.icon:hover {
+  margin-bottom: 4px;
+  box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, .3);
+}
+
+.icon.mail {
+  height: 15px;
+  width: auto;
+  margin-left: 0;
+}
+
+.icon.linkedIn {
+  border-radius: 10px;
 }
 
 .footer_left,
@@ -228,7 +248,11 @@ div.logo-banner {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 2px 0;
+  padding: 4px 0;
+}
+
+.footer_icons {
+  height: 20px;
 }
 
 footer {
@@ -272,6 +296,10 @@ footer {
     height: 200px;
     width: 200px;
   }
+
+  .nav-placeholder {
+    height: 15em;
+  }
 }
 
 @media all and (min-width: 900px) {
@@ -291,10 +319,6 @@ footer {
 @media all and (min-width: 1050px) {
   .parallax-image {
     min-height: 35em;
-  }
-
-  .nav-placeholder {
-    height: 15em;
   }
 
   nav {
@@ -357,9 +381,8 @@ footer {
     z-index: 0;
   }
 
-  .icon {
-    padding: 0;
-    margin-left: 10px;
+  .icon.mail {
+    margin-left: 30px;
   }
 
   .footer_left,
