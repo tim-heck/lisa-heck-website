@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   color: #000;
@@ -8,7 +9,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
   font-weight: 800;
@@ -143,7 +149,8 @@ label[for="nav-trigger"] {
   background-size: contain;
 }
 
-.nav-trigger+label, .container {
+.nav-trigger+label,
+.container {
   transition: left 0.2s;
 }
 
@@ -274,7 +281,8 @@ div.logo-banner {
 
 /* About */
 
-.about, .work {
+.about,
+.work {
   display: flex;
   flex-flow: column wrap;
 }
@@ -346,7 +354,8 @@ div.logo-banner {
   margin-bottom: 60px;
 }
 
-.contact_text, .work_text {
+.contact_text,
+.work_text {
   padding: 0 2em;
 }
 
@@ -578,9 +587,19 @@ div.logo-banner {
   padding: 30px 20px 20px;
 }
 
+.work_image-group-calabrio-2 {
+  padding: 10px;
+}
+
+.calabrio_image-5 {
+  margin-bottom: 0;
+}
+
 /* Footer */
 
-.footer_left, .footer_right, .footer_icons {
+.footer_left,
+.footer_right,
+.footer_icons {
   display: flex;
   flex: 1;
   width: 100%;
@@ -624,56 +643,77 @@ footer {
   .container {
     padding: 60px 60px 140px 60px;
   }
+
   .parallax-image {
     min-height: 18em;
   }
+
   .h1-parallax {
     font-size: 1.3em;
   }
+
   .h3-divide {
     font-size: 2em;
     padding: 4em 1em 4em 2em;
   }
+
   .logo {
     height: 200px;
     width: 200px;
   }
+
   .nav-placeholder {
     height: 15em;
   }
+
   .about_text {
     padding: 0 4em 8em;
   }
+
   .about_text h3 {
     font-size: 2em;
   }
-  .contact_text, .work_text {
+
+  .contact_text,
+  .work_text {
     padding: 0 4em;
   }
-  .contact_text h3, .work_text h3 {
+
+  .contact_text h3,
+  .work_text h3 {
     font-size: 2em;
     padding: 1em 0;
   }
+
   .work_company {
     width: 50%;
   }
+
   .work-block {
     padding: 50px;
   }
+
   .work-block-inner {
     padding: 0;
   }
+
   .work-block h3 {
     font-size: 2em;
   }
+
   .work-block_description {
     margin-bottom: 70px;
     padding: 0;
   }
+
   .work_image-container {
     display: flex;
     flex-flow: row wrap;
     padding: 50px 50px;
+  }
+
+  .work_image-group-calabrio-2 {
+    padding: 0;
   }
 }
 
@@ -681,38 +721,48 @@ footer {
   .parallax-image {
     min-height: 25em;
   }
+
   .h1-parallax {
     font-size: 1.6em;
   }
+
   .h3-divide {
     padding: 4em 1em 4em 6em;
   }
+
   .work-block_description {
     max-width: 670px;
     margin: 60px auto 100px;
   }
-  .work-block_description h3, 
+
+  .work-block_description h3,
   .work-block_description p {
     width: 50%;
   }
+
   .work_image {
     box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .4);
   }
+
   .work_image-inner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
+
   .work_image-inner .work_image:first-child {
     margin: 0 20px 0 0;
   }
+
   .calabrio_image-1 {
     margin-bottom: 30px;
   }
+
   .work-block_title {
     padding: 3em 1em 0;
   }
+
   .work_image-inner .work_image {
     max-width: 50%;
   }
@@ -722,6 +772,7 @@ footer {
   .parallax-image {
     min-height: 35em;
   }
+
   nav {
     position: fixed;
     background-color: #fff;
@@ -735,6 +786,7 @@ footer {
     padding: 50px 0 0 0;
     height: 50px;
   }
+
   a#lhd {
     text-decoration: none;
     color: #000;
@@ -744,9 +796,11 @@ footer {
     padding: 10px;
     display: inline-block;
   }
+
   a#lhd:hover {
     color: #a67714;
   }
+
   ul.nav-menu {
     list-style-type: none;
     margin: 0 50px 0 0;
@@ -754,6 +808,7 @@ footer {
     overflow: hidden;
     float: right;
   }
+
   ul.nav-menu li {
     display: inline-block;
     margin-left: auto;
@@ -762,94 +817,131 @@ footer {
     cursor: pointer;
     width: unset;
   }
+
   ul.nav-menu li:hover a {
     color: #a67714;
   }
+
   ul.nav-menu li a {
     letter-spacing: 2px;
     font-size: 11pt;
     color: #000;
     text-decoration: none;
   }
+
   label[for="nav-trigger"] {
     z-index: 0;
   }
+
   /* Footer */
   .footer_icons .icon.mail {
     margin-left: 30px;
   }
-  .footer_left, .footer_right, .footer_icons {
+
+  .footer_left,
+  .footer_right,
+  .footer_icons {
     justify-content: unset;
     width: unset;
     padding: 5px 0;
     flex: unset;
   }
+
   .footer_left {
     margin-right: auto;
     padding-left: 60px;
   }
+
   .footer_right {
     margin-left: auto;
   }
+
   .footer_icons {
     padding-right: 60px;
   }
+
   .footer_icons .icon {
     margin-left: 20px;
   }
+
   footer {
     flex-flow: row nowrap;
     font-size: 1em;
     padding: 35px 0;
   }
+
   .about_paragraphs {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
+
   .contact_text h3 {
     padding: 9em 0;
   }
+
   .contact_form {
     margin: 0 0 0 auto;
     width: 50%;
   }
+
   .work_company {
     width: 33.333333%;
   }
+
   .work_company-text {
     height: 0;
     transition: .3s;
   }
+
   .work_company:hover .work_company-text {
     height: 120px;
   }
+
   .work_image-inner .work_image:first-child {
     margin: 0 0 20px 0;
   }
+
   .calabrio_image-1 {
     margin: 0 50px 0 0;
     max-width: 70%;
   }
+
   .work_image-inner {
     flex-flow: column nowrap;
     width: 300px;
   }
+
   .work_image-container {
     flex-flow: row nowrap;
     padding: 80px 50px;
   }
+
   .work-block_title {
     width: 40%;
     margin-left: auto;
     padding: 12em 2em 2em 2em
   }
+
   .calabrio_image-4 {
-    margin-right: 50px;
     transform: translate(0, -285px);
   }
+
   .work_image-inner .work_image {
     max-width: 100%;
+  }
+
+  .work_image-div:first-child {
+    padding-right: 25px;
+  }
+
+  .work_image-div:last-child {
+    padding-left: 25px;
+  }
+
+  .work_image-group-calabrio-2 {
+    display: flex;
+    flex-flow: row nowrap;
   }
 }
 
@@ -857,9 +949,12 @@ footer {
   .about_text {
     padding: 0 8em 8em;
   }
-  .contact_text, .work_text {
+
+  .contact_text,
+  .work_text {
     padding: 0 8em;
   }
+
   .about_image {
     background-position: unset;
   }
@@ -869,9 +964,12 @@ footer {
   .about_text {
     padding: 0 10em 8em;
   }
-  .contact_text, .work_text {
+
+  .contact_text,
+  .work_text {
     padding: 0 10em;
   }
+
   .work_image-inner {
     width: 500px;
   }
@@ -881,10 +979,13 @@ footer {
   .about_text {
     padding: 0 12em 8em;
   }
+
   .about_paragraph {
     margin: 0 0 20px 0;
   }
-  .contact_text, .work_text {
+
+  .contact_text,
+  .work_text {
     padding: 0 12em;
   }
 }
