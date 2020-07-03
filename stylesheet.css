@@ -22,6 +22,10 @@ h6 {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  cursor: pointer;
+}
+
 .gold-text {
   color: #a67714;
 }
@@ -583,8 +587,12 @@ div.logo-banner {
   margin: 0;
 }
 
-.work-block_title {
-  padding: 30px 20px 20px;
+.work-block_title-under {
+  padding: 50px 20px 0;
+}
+
+.work-block_title-above {
+  padding: 0 0 50px;
 }
 
 .work_image-group-calabrio-2 {
@@ -599,6 +607,7 @@ div.logo-banner {
 
 .footer_left,
 .footer_right,
+.footer_middle,
 .footer_icons {
   display: flex;
   flex: 1;
@@ -614,6 +623,11 @@ div.logo-banner {
 
 .footer_icons .icon {
   padding: 0 5px;
+}
+
+.footer_middle {
+  position: absolute;
+  width: 100%;
 }
 
 footer {
@@ -709,8 +723,12 @@ footer {
   .work_image-container {
     display: flex;
     flex-flow: row wrap;
-    padding: 50px 50px;
+    padding: 50px;
   }
+
+  .work-block .work_image-container {
+     padding: 0;
+   }
 
   .work_image-group-calabrio-2 {
     padding: 0;
@@ -755,11 +773,12 @@ footer {
     margin: 0 20px 0 0;
   }
 
-  .calabrio_image-1 {
+  .calabrio_image-1,
+  .calabrio_image-9 {
     margin-bottom: 30px;
   }
 
-  .work-block_title {
+  .work-block_title-under {
     padding: 3em 1em 0;
   }
 
@@ -907,6 +926,11 @@ footer {
     max-width: 70%;
   }
 
+  .calabrio_image-9 {
+    margin: 0 50px 0 0;
+    max-width: 65%;
+  }
+
   .work_image-inner {
     flex-flow: column nowrap;
     width: 300px;
@@ -917,10 +941,18 @@ footer {
     padding: 80px 50px;
   }
 
-  .work-block_title {
+  .work-block_title-under {
+    padding: 12em 2em 2em 2em;
+  }
+
+  .work-block_title-right {
     width: 40%;
     margin-left: auto;
-    padding: 12em 2em 2em 2em
+  }
+
+  .work-block_title-left {
+    width: 40%;
+    margin-right: auto;
   }
 
   .calabrio_image-4 {
@@ -943,6 +975,20 @@ footer {
     display: flex;
     flex-flow: row nowrap;
   }
+
+  .work_image-group-calabrio-3 .work_image-div:first-child {
+    padding-right: 80px;
+  }
+
+  .work_image-group-calabrio-3 .work_image-div:last-child {
+    padding-left: 80px;
+  }
+
+  .work_image-group-calabrio-4 .work_image-inner {
+    justify-content: space-between;
+    width: 100%;
+  }
+
 }
 
 @media all and (min-width: 1150px) {
