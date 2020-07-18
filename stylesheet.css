@@ -52,6 +52,10 @@ p.sans-serif {
   text-align: center;
 }
 
+.work_image.no-box-shadow {
+  box-shadow: unset;
+}
+
 .content-divider {
   height: 8em;
   width: 100%;
@@ -281,6 +285,56 @@ div.logo-banner {
 
 .icon.linkedIn {
   border-radius: 10px;
+}
+
+/* Footer */
+
+.footer_left,
+.footer_right,
+.footer_middle,
+.footer_icons {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.footer_icons {
+  height: 20px;
+}
+
+.footer_icons .icon {
+  padding: 0 5px;
+}
+
+.footer_middle {
+  position: absolute;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  color: #000;
+  background-color: #f1f3f4;
+  font-family: proxima-nova, "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 13px;
+  letter-spacing: .1px;
+}
+
+.footer_info {
+  padding: 0;
+  margin: 0;
 }
 
 /* About */
@@ -603,54 +657,15 @@ div.logo-banner {
   margin-bottom: 0;
 }
 
-/* Footer */
-
-.footer_left,
-.footer_right,
-.footer_middle,
-.footer_icons {
-  display: flex;
-  flex: 1;
+/* Boston Scientific */
+.bsc_image {
+  background-image: url("./public/images/boston_scientific/clientpage_bsc.png");
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 0;
-}
-
-.footer_icons {
-  height: 20px;
-}
-
-.footer_icons .icon {
-  padding: 0 5px;
-}
-
-.footer_middle {
-  position: absolute;
-  width: 100%;
-}
-
-footer {
-  position: fixed;
-  width: 100%;
-  padding: 20px 0;
-  color: #000;
-  background-color: #f1f3f4;
-  font-family: proxima-nova, "Montserrat", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-flow: column wrap;
-  font-size: 13px;
-  letter-spacing: .1px;
-}
-
-.footer_info {
-  padding: 0;
-  margin: 0;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media all and (min-width: 600px) {
@@ -727,8 +742,8 @@ footer {
   }
 
   .work-block .work_image-container {
-     padding: 0;
-   }
+    padding: 0;
+  }
 
   .work_image-group-calabrio-2 {
     padding: 0;
