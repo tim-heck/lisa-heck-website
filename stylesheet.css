@@ -518,16 +518,6 @@ footer {
   font-weight: 500;
 }
 
-.calabrio_image {
-  background-image: url("./public/images/calabrio/clientpage_calabrio.png");
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .work-block {
   padding: 10px;
 }
@@ -559,6 +549,32 @@ footer {
   line-height: 25px;
   margin: 0 0 10px;
   width: 100%;
+}
+
+.work_image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.work_image-container {
+  padding: 0;
+}
+
+.work_image-inner {
+  width: 100%;
+}
+
+.work_image-inner .work_image:last-child {
+  margin: 0;
+}
+
+.work-block_title-under {
+  padding: 50px 20px 0;
+}
+
+.work-block_title-above {
+  padding: 0 0 50px;
 }
 
 /* Work display block colors */
@@ -623,38 +639,23 @@ footer {
   background-color: #f1f0c6;
 }
 
-.work_image {
+/* Calabrio */
+.calabrio_image {
+  background-image: url("./public/images/calabrio/clientpage_calabrio.png");
   width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.work_image-container {
-  padding: 0;
-}
-
-.work_image-inner {
-  width: 100%;
-}
-
-.work_image-inner .work_image:last-child {
-  margin: 0;
-}
-
-.work-block_title-under {
-  padding: 50px 20px 0;
-}
-
-.work-block_title-above {
-  padding: 0 0 50px;
-}
-
-.work_image-group-calabrio-2 {
-  padding: 10px;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .calabrio_image-5 {
   margin-bottom: 0;
+}
+
+.work_image-group-calabrio-2 {
+  padding: 10px;
 }
 
 /* Boston Scientific */
@@ -670,6 +671,39 @@ footer {
 
 .work_image-group-bsc-1 .work_image-inner {
   margin-bottom: 10px;
+}
+
+/* CSI */
+.csi_image {
+  background-image: url("./public/images/cardiovascular_systems/clientpage_csi.png");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Timberland Partners */
+.timberland_image {
+  background-image: url("./public/images/timberland_partners/clientpage_timberlandpartners.png");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Medica */
+.medica_image {
+  background-image: url("./public/images/medica/clientpage_medica.png");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media all and (min-width: 600px) {
