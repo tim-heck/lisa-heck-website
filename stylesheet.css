@@ -738,6 +738,9 @@ footer {
   background-position: center;
 }
 
+.work_image-group-csi-2 .work_image-container {
+  margin-top: -150px;
+}
 
 /* Timberland Partners */
 
@@ -1264,6 +1267,10 @@ footer {
   .work_image-group-bsc-6 .work_image-container img {
     height: 300px;
     width: auto;
+  }
+
+  .work_image-group-csi-2 .work_image-container {
+    margin-right: 300px
   }
 }
 
