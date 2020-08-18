@@ -343,7 +343,6 @@ footer {
   margin: 0;
 }
 
-
 /* About */
 
 .about,
@@ -406,7 +405,6 @@ footer {
   margin-right: 10px;
 }
 
-
 /* Contact */
 
 .contact_image {
@@ -456,7 +454,6 @@ footer {
   border: 1px solid #d1d2d4;
   margin-bottom: 50px;
 }
-
 
 /* Work */
 
@@ -512,7 +509,6 @@ footer {
   font-size: 15pt;
   letter-spacing: .6px;
 }
-
 
 /* Work pages */
 
@@ -653,7 +649,6 @@ footer {
   background-color: #f1f0c6;
 }
 
-
 /* Calabrio */
 
 .calabrio_image {
@@ -670,10 +665,9 @@ footer {
   margin-bottom: 0;
 }
 
-.work_image-group-calabrio-2 {
+.work_image-group-uneven {
   padding: 10px;
 }
-
 
 /* Boston Scientific */
 
@@ -754,7 +748,6 @@ footer {
   background-position: center;
 }
 
-
 /* Medica */
 
 .medica_image {
@@ -766,7 +759,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 /* Abbott */
 
@@ -856,7 +848,7 @@ footer {
     padding: 0;
   }
 
-  .work_image-group-calabrio-2 {
+  .work_image-group-uneven {
     padding: 0;
   }
 
@@ -947,6 +939,10 @@ footer {
 
   .work-block_desc-image .work-block_description h3,
   .work-block_desc-image .work-block_description p {
+    width: 100%;
+  }
+
+  .work_image-group-csi-3 .work-block_description p {
     width: 100%;
   }
 }
@@ -1110,8 +1106,12 @@ footer {
   }
 
   .work-block_title-right {
-    width: 40%;
+    width: 50%;
     margin-left: auto;
+  }
+
+  .work-block_title-right h3 {
+    padding-left: 55px;
   }
 
   .work-block_title-left {
@@ -1121,7 +1121,7 @@ footer {
 
   .calabrio_image-4 {
     transform: translate(0, -285px);
-  }
+  } 
 
   .work_image-inner .work_image {
     max-width: 100%;
@@ -1135,7 +1135,7 @@ footer {
     padding-left: 25px;
   }
 
-  .work_image-group-calabrio-2 {
+  .work_image-group-uneven {
     display: flex;
     flex-flow: row nowrap;
   }
@@ -1248,6 +1248,62 @@ footer {
     height: 250px;
     width: auto;
   }
+
+  .work_image-group-uneven {
+    padding: 0 60px;;
+  }
+
+  .work_image-group-csi-3 .csi_image-6 {
+    margin-top: -240px;
+  }
+
+  .work_image-group-csi-3 .work-block_gray {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .csi_image-7 {
+    box-shadow: 3px -3px 4px 0 rgba(0, 0, 0, .4);
+    margin-bottom: -4px;
+  }
+
+  .work_image-group-csi-3 .work-block_title-right h3 {
+    padding-left: 25px;
+  }
+
+  .work_image-group-csi-3 .work-block_description {
+    max-width: 1000px;
+    margin-bottom: 60px; 
+  }
+
+  .work_image-group-csi-3 .work-block_description h3 {
+    max-width: 1000px;
+    padding-top: 10px;
+  }
+
+  .work_image-group-csi-3 .work-block_description p {
+    margin: 0;
+    width: 50%;
+  }
+
+  .work_image-group-csi-4 .work_image-container {
+    padding: 60px;
+    align-items: center;;
+  }
+  
+  .work_image-group-csi-5.work-block_desc-image .work_image-container {
+    margin-right: 50px;
+    flex: 1 0.8 auto;;
+  }
+
+  .work_image-group-csi-5.work-block_desc-image {
+    align-items: center;
+    margin: 0 -50px;
+  }
+
+  .work_image-group-csi-5.work-block_desc-image .work_image-div {
+    padding: 0;
+  }
 }
 
 @media all and (min-width: 1150px) {
@@ -1271,6 +1327,10 @@ footer {
 
   .work_image-group-csi-2 .work_image-container {
     margin-right: 300px
+  }
+
+  .work_image-group-csi-4 .work_image-div:first-child {
+    width: 80%;
   }
 }
 
@@ -1296,6 +1356,14 @@ footer {
   .work-block_desc-image .work_image-container {
     margin-right: 50px;
   }
+
+  .work_image-group-csi-4 .work_image-div:first-child {
+    width: 70%;
+  }
+
+  .work_image-group-csi-5.work-block_desc-image .work_image-container {
+    flex: 1 0.3 auto;;
+  }
 }
 
 @media all and (min-width: 1450px) {
@@ -1310,5 +1378,20 @@ footer {
   .contact_text,
   .work_text {
     padding: 0 12em;
+  }
+
+  .work_image-group-csi-4 .work_image-div:first-child {
+    width: 60%;
+  }
+
+  .work_image-group-csi-5.work-block_desc-image .work_image-container {
+    flex: 1 0.1 auto;;
+  }
+}
+
+
+@media all and (min-width: 1450px) {
+  .work_image-group-csi-5.work-block_desc-image .work_image-container {
+    flex: 1 0 auto;;
   }
 }
