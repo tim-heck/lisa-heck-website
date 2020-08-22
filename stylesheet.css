@@ -736,6 +736,21 @@ footer {
   margin-top: -150px;
 }
 
+.work_image-inner-split {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.work_image-inner-split .work_image-div:first-child {
+  margin-right: 5px;
+}
+
+.work_image-inner-split .work_image-div:last-child {
+  margin-left: 5px;
+}
+
 /* Timberland Partners */
 
 .timberland_image {
@@ -944,6 +959,14 @@ footer {
 
   .work_image-group-csi-3 .work-block_description p {
     width: 100%;
+  }
+
+  .work_image-inner-split .work_image-div:first-child {
+    margin-right: 25px;
+  }
+
+  .work_image-inner-split .work_image-div:last-child {
+    margin-left: 25px;
   }
 }
 
@@ -1303,6 +1326,54 @@ footer {
 
   .work_image-group-csi-5.work-block_desc-image .work_image-div {
     padding: 0;
+  }
+
+  .work_image-group-csi-6 .work_image-container:first-child {
+    padding: 0 60px 60px;
+    align-items: center;
+  }
+
+  .work_image-group-csi-6 .work_image-container:first-child .work_image-div {
+    width: 30%;
+  }
+
+  .work_image-group-csi-6 .work_image-container:first-child .work-block_title-right {
+    width: 70%;
+  }
+
+  .work_image-group-csi-6 .work_image-container:last-child .work_image-div:last-child {
+    width: 300px;
+  }
+
+  .work_image-group-csi-7 .work_image-div {
+    width: 50%;
+  }
+
+  .work_image-group-csi-7 .work-block_title-left {
+    padding-left: 80px;
+  }
+
+  .work_image-inner-split .work_image-div:first-child {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .work_image-inner-split .work_image-div:last-child {
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  .csi-image-14 {
+    margin-top: 170px;
+  }
+
+  .csi-image-15,
+  .csi-image-17 {
+    margin-top: -40px;
+  }
+
+  .csi-image-16 {
+    margin-top: -400px;
   }
 }
 
