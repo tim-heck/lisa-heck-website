@@ -638,11 +638,11 @@ footer {
 }
 
 .work-block_teal {
-  background-color: #d2edf2;
+  background-color: #00718f;
 }
 
 .work-block_light-teal {
-  background-color: #00718f;
+  background-color: #d2edf2;
 }
 
 .work-block_light-yellow {
@@ -773,6 +773,14 @@ footer {
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.medica-image-3 {
+  margin-top: -330px;
+}
+
+.medica-image-4 {
+  margin-top: -350px;
 }
 
 /* Abbott */
@@ -1144,7 +1152,7 @@ footer {
 
   .calabrio_image-4 {
     transform: translate(0, -285px);
-  } 
+  }
 
   .work_image-inner .work_image {
     max-width: 100%;
@@ -1273,7 +1281,8 @@ footer {
   }
 
   .work_image-group-uneven {
-    padding: 0 60px;;
+    padding: 0 60px;
+    ;
   }
 
   .work_image-group-csi-3 .csi_image-6 {
@@ -1296,7 +1305,7 @@ footer {
 
   .work_image-group-csi-3 .work-block_description {
     max-width: 1000px;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
   }
 
   .work_image-group-csi-3 .work-block_description h3 {
@@ -1311,12 +1320,14 @@ footer {
 
   .work_image-group-csi-4 .work_image-container {
     padding: 60px;
-    align-items: center;;
+    align-items: center;
+    ;
   }
-  
+
   .work_image-group-csi-5.work-block_desc-image .work_image-container {
     margin-right: 50px;
-    flex: 1 0.8 auto;;
+    flex: 1 0.8 auto;
+    ;
   }
 
   .work_image-group-csi-5.work-block_desc-image {
@@ -1407,6 +1418,37 @@ footer {
   .work_image-group-timb-1 .work_image-div:nth-child(4) {
     margin-left: auto;
   }
+
+  .work_image-group-medica-1 .work-block_light-teal {
+    padding: 100px 140px;
+  }
+
+  .work_image-group-medica-2,
+  .work_image-group-medica-3 {
+    padding: 180px;
+  }
+
+  .work_image-group-medica-2 .work_image-div,
+  .work_image-group-medica-3 .work_image-div {
+    width: 50%;
+  }
+
+  .work_image-group-medica-4 {
+    padding: 50px 240px;
+  }
+
+  .work_image-group-medica-4 .work-block_title {
+    padding: 50px 0 100px;
+  }
+
+  .work_image-group-medica-4 .work_image-container {
+    padding-bottom: 50px;
+  }
+
+  .work_image-group-medica-5 .work_image-container {
+    padding: 0 140px;
+  }
+
 }
 
 @media all and (min-width: 1150px) {
@@ -1465,7 +1507,8 @@ footer {
   }
 
   .work_image-group-csi-5.work-block_desc-image .work_image-container {
-    flex: 1 0.3 auto;;
+    flex: 1 0.3 auto;
+    ;
   }
 }
 
@@ -1488,13 +1531,15 @@ footer {
   }
 
   .work_image-group-csi-5.work-block_desc-image .work_image-container {
-    flex: 1 0.1 auto;;
+    flex: 1 0.1 auto;
+    ;
   }
 }
 
 
 @media all and (min-width: 1450px) {
   .work_image-group-csi-5.work-block_desc-image .work_image-container {
-    flex: 1 0 auto;;
+    flex: 1 0 auto;
+    ;
   }
 }
