@@ -141,7 +141,6 @@ ul.nav-menu li a {
 
 
 /* Off-canvas menu specific */
-
 .nav-trigger {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -153,9 +152,8 @@ label[for="nav-trigger"] {
   top: 15px;
   z-index: 2;
   height: 30px;
-  width: 30px;
+  width: 100%;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
   background-size: contain;
 }
 
@@ -172,6 +170,39 @@ label[for="nav-trigger"] {
   left: 250px;
 }
 
+.nav-trigger:checked~label .bar-1 {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.nav-trigger:checked~label .bar-2 {
+  opacity: 0;
+}
+
+.nav-trigger:checked~label .bar-3 {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.bar {
+  background-color: #000;
+  width: 30px;
+  height: 6px;
+  margin-bottom: 4px;
+  transition: .4s;
+}
+
+.nav-trigger-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.nav-trigger:checked~.container .nav-trigger-background {
+  left: 250px;
+}
 
 /* Container (All content) */
 
@@ -269,17 +300,21 @@ div.logo-banner {
   letter-spacing: 1.5px;
 }
 
+.icon_link {
+  opacity: .7;
+  text-decoration: none;
+}
+
+.icon_link:hover {
+  opacity: 1;
+}
+
 .icon {
   width: 18px;
   height: 18px;
   padding: 0;
   cursor: pointer;
   transition: .2s;
-  opacity: .7;
-}
-
-.icon:hover {
-  opacity: 1;
 }
 
 .icon.mail {
@@ -292,34 +327,7 @@ div.logo-banner {
   border-radius: 10px;
 }
 
-
 /* Footer */
-
-.footer_left,
-.footer_right,
-.footer_middle,
-.footer_icons {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 0;
-}
-
-.footer_icons {
-  height: 20px;
-}
-
-.footer_icons .icon {
-  padding: 0 5px;
-}
-
-.footer_middle {
-  position: absolute;
-  width: 100%;
-}
-
 footer {
   position: fixed;
   width: 100%;
@@ -336,11 +344,26 @@ footer {
   flex-flow: column wrap;
   font-size: 13px;
   letter-spacing: .1px;
+  align-items: center;
+  justify-items: center;
+  flex: 1;
 }
 
-.footer_info {
-  padding: 0;
-  margin: 0;
+.footer_section {
+  display: flex;
+  align-items: center;
+}
+
+.footer_icons {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.footer_icons a {
+  margin-left: 20px;
 }
 
 /* About */
@@ -448,8 +471,7 @@ footer {
 
 .contact_form textarea {
   width: 100%;
-  padding: 0;
-  text-indent: 8px;
+  padding: 8px;
   border-radius: 4px;
   border: 1px solid #d1d2d4;
   margin-bottom: 50px;
@@ -720,6 +742,10 @@ footer {
   display: none;
 }
 
+.work-block_desc-image .work_image {
+  height: 100%;
+}
+
 /* CSI */
 
 .csi_image {
@@ -884,6 +910,17 @@ footer {
   }
 }
 
+@media all and (min-width: 750px) {
+  footer {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: unset;
+    align-items: unset;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
 @media all and (min-width: 900px) {
   .parallax-image {
     min-height: 25em;
@@ -1043,43 +1080,11 @@ footer {
     z-index: 0;
   }
 
+  .nav-trigger-background {
+    display: none;
+  }
+
   /* Footer */
-  .footer_icons .icon.mail {
-    margin-left: 30px;
-  }
-
-  .footer_left,
-  .footer_right,
-  .footer_icons {
-    justify-content: unset;
-    width: unset;
-    padding: 5px 0;
-    flex: unset;
-  }
-
-  .footer_left {
-    margin-right: auto;
-    padding-left: 60px;
-  }
-
-  .footer_right {
-    margin-left: auto;
-  }
-
-  .footer_icons {
-    padding-right: 60px;
-  }
-
-  .footer_icons .icon {
-    margin-left: 20px;
-  }
-
-  footer {
-    flex-flow: row nowrap;
-    font-size: 1em;
-    padding: 35px 0;
-  }
-
   .about_paragraphs {
     display: flex;
     flex-flow: row nowrap;
@@ -1100,12 +1105,11 @@ footer {
   }
 
   .work_company-text {
-    height: 0;
     transition: .3s;
   }
 
   .work_company:hover .work_company-text {
-    height: 120px;
+    background-color: rgba(166, 119, 20, .70);
   }
 
   .work_image-inner .work_image:first-child {
@@ -1518,7 +1522,7 @@ footer {
     margin-right: auto;
   }
 
-  .work_image-group-abbott-5 .abbott-image-left-1 {
+  .abbott-image-group-max-width {
     max-width: 400px;
   }
 
