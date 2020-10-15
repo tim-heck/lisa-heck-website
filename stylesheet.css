@@ -62,11 +62,11 @@ p.sans-serif {
 }
 
 .btn {
-  padding: 8px 45px !important;
-  background-color: #f1f3f4;
+  padding: 15px 45px !important;
+  background-color: #ffffff;
   text-transform: uppercase;
   font-family: proxima-nova, "Montserrat", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   width: unset !important;
   text-align: center;
@@ -74,6 +74,8 @@ p.sans-serif {
   border: none !important;
   letter-spacing: .75px;
   cursor: pointer;
+  text-decoration: none;
+  color: #000000;
 }
 
 .btn:hover {
@@ -451,6 +453,15 @@ footer {
   line-height: 1.6em;
   letter-spacing: 1.5px;
   padding: 2em 0;
+}
+
+.contact_text p {
+  font-family: proxima-nova, "Montserrat", sans-serif;
+  font-size: 9pt;
+  line-height: 2.5em;
+  letter-spacing: 1.5px;
+  padding: 3.5em 0 1em;
+  font-weight: 300;
 }
 
 .contact_form p {
