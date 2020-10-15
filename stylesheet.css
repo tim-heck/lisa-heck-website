@@ -457,11 +457,12 @@ footer {
 
 .contact_text p {
   font-family: proxima-nova, "Montserrat", sans-serif;
+  margin: 0;
   font-size: 9pt;
-  line-height: 2.5em;
-  letter-spacing: 1.5px;
+  line-height: 25px;
+  letter-spacing: .1px;
   padding: 3.5em 0 1em;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .contact_form p {
@@ -1498,8 +1499,6 @@ footer {
     align-items: baseline;
     padding-left: 60px;
     padding-right: 60px;
-    /* width: 70%;
-    margin-left: auto; */
   }
 
   .work_image-group-abbott-3 .work_image-div {
