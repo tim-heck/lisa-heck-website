@@ -1525,7 +1525,7 @@ footer {
 
   .work_image-group-abbott-4 .work_image-container:first-child .work_image-div {
     margin-left: auto;
-    width: 60%;
+    width: 61%;
   }
 
   .work_image-group-abbott-4 .work_image-container:nth-child(2) {
@@ -1548,6 +1548,10 @@ footer {
   .work_image-group-abbott-5 .abbott-container {
     margin: 0 auto;
     width: 850px;
+  }
+
+  .abbott-image-18 {
+    max-width: 590px;
   }
 }
 
